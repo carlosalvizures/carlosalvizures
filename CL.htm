@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraColorea-->
+<!--bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+para otros usos contacte con el autor-->
+<html lang="es">
+<head><meta charset="utf-8" /><title>Colorea al Robot</title>
+<link type="text/css" href="CL_resources/css/ardoraColorea.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="CL_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="CL_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="CL_resources/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="CL_resources/js/ardoraColoreaCFG.js"></script>
+<script language="javascript" type="text/javascript" src="CL_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="CL_resources/js/ardoraColorea.js"></script>
+<script language="javascript" type="text/javascript" src="CL_resources/js/ardoraTab.js"></script>
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<div id="ardoraMain">
+<audio id="audioFelicitacion">
+<source src="CL_resources/media/Efecto_acierto.mp3" type="audio/mp3">
+</audio>
+<audio id="audioTempo">
+<source src="CL_resources/media/y2mate.com_-_sonido_de_alarma_despertador_fuerte__bajen_volumen_por_qu___si_est___fuerte.mp3" type="audio/mp3">
+</audio>
+<audio id="audioIntentos">
+<source src="CL_resources/media/Efecto_error.mp3" type="audio/mp3">
+</audio>
+<audio id="audioErro">
+<source src="CL_resources/media/Efecto_error.mp3" type="audio/mp3">
+</audio>
+<div id="ardoraEnu"><SPAN style="font-size:12px;color:#000000">Colorea al Robot según los números que estan en el Robot.</SPAN><br><SPAN style="font-size:12px;color:#000000">Buena suerte</SPAN></div>
+  <div id="ardoraAct">
+  <canvas id="ardoraCanvasPaint" width="458px" height="400px"></canvas>
+  <div id="colorPanel">
+<li><span class="bColor" id="c0"></span><p id="p0">1</p></li>
+<li><span class="bColor" id="c1"></span><p id="p1">2</p></li>
+<li><span class="bColor" id="c2"></span><p id="p2">3</p></li>
+<li><span class="bColor" id="c3"></span><p id="p3">4</p></li>
+<li><span class="bColor" id="c4"></span><p id="p4">5</p></li>
+<li><span class="bColor" id="c5"></span><p id="p5">6</p></li>
+<li><span class="bColor" id="c6"></span><p id="p6">7</p></li>
+  </div>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
+<div id="ardoraAutor"><p>Carlos Alvizures</p></div>
+</body></html>
